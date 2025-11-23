@@ -1,18 +1,16 @@
 {
-  "name": "bacend",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "description": "Ecommerce Backend",
+  "main": "server.js",
   "type": "commonjs",
-  "main": "index.js",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "exprss": "^0.0.1-security",
     "mongoose": "^9.0.0"
   }
 }
