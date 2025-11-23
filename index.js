@@ -16,7 +16,9 @@ app.use(express.json());
 // Routes
 app.use('/api', clothRoutes);
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.get('/', (req, res) => {
