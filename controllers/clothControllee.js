@@ -5,11 +5,11 @@ const mongoose = require('mongoose');
 
 const addCloth = async (req, res) => {
     try {
-        const { name, size, color, price } = req.body; 
+        const { name, size, color, price,imgUrl } = req.body; 
         if(!name || !size || !color || !price) {
             return res.status(400).json({ message: 'All fields are required' });
         }
-        const newCloth = new cloth({ name, size, color, price });
+        const newCloth = new cloth({ name, size, color, price,imgUrl });
         await newCloth.save();
         res.status(201).json({ message: 'Cloth added successfully', cloth: newCloth });
     } catch (error) {

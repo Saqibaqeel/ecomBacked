@@ -15,7 +15,12 @@ const clothSchema = new mongoose.Schema({
     price: {
     type: Number,
     required: true
+    },
+    imgUrl: {
+    type: String,
+    required: false
     }
+    
 });
 const cloth = mongoose.model('cloth', clothSchema);
 module.exports = cloth;
