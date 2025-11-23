@@ -1,12 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Ecommerce Backend",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "type": "commonjs",
   "license": "ISC",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
