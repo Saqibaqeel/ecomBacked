@@ -1,7 +1,9 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const connectDb = require('./connectDb');
 const clothRoutes = require('./routes/clothRoutes');
+
 
 dotenv.config();
 connectDb();
@@ -13,6 +15,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', clothRoutes);
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
